@@ -30,21 +30,34 @@ def draw_hex(length, color):
 
 
 def draw_flower():
-    draw_hex(get_length_hexagon(), get_center_color())
+    length_hex = get_length_hexagon()
+    petal_color = get_petal_color()
+    draw_hex(length_hex, get_center_color())
     turtle.penup()
-    turtle.left(90)
-    turtle.forward(70)
+    turtle.left(120)
+    turtle.forward(length_hex)
+    turtle.right(60)
+    turtle.forward(length_hex)
+    turtle.right(60)
     turtle.pendown
-    draw_hex(get_length_hexagon(), get_petal_color())
+    draw_hex(length_hex, petal_color)
+    turtle.penup()
+    turtle.forward(length_hex)
+    turtle.right(60)
+    turtle.forward(length_hex)
+    turtle.pendown()
+    draw_hex(length_hex, petal_color)
+    turtle.penup()
+    turtle.left(300)
+    turtle.forward(length_hex)
+    turtle.left(60)
+    turtle.forward(length_hex)
+    turtle.left(60)
+
 
 
 draw_flower()
-#
-# draw_petals
-# def draw_flower():
-#     draw_hex()
-#
-#
+
 # def main():
 #     get_length_hexagon()
 #     get_petal_color()
