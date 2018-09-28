@@ -45,27 +45,48 @@ def draw_flower():
     turtle.forward(length_hex)
     turtle.right(60)
     turtle.forward(length_hex)
+    turtle.left(60)
     turtle.pendown()
     draw_hex(length_hex, petal_color)
     turtle.penup()
-    turtle.left(300)
+    turtle.left(240)
     turtle.forward(length_hex)
     turtle.left(60)
     turtle.forward(length_hex)
     turtle.left(60)
+    turtle.pendown()
+    draw_hex(length_hex, petal_color)
+    turtle.penup()
+    turtle.left(240)
+    turtle.forward(length_hex)
+    turtle.right(60)
+    turtle.forward(length_hex)
+    turtle.left(180)
+    turtle.pendown()
+    draw_hex(length_hex, petal_color)
+    turtle.penup()
+    turtle.left(120)
+    turtle.forward(length_hex)
+    turtle.left(60)
+    turtle.forward(length_hex)
+    turtle.left(180)
+    turtle.pendown()
+    draw_hex(length_hex, petal_color)
+    turtle.penup()
+    turtle.left(120)
+    turtle.forward(length_hex)
+    turtle.right(60)
+    turtle.forward(length_hex)
+    turtle.right(60)
+    turtle.pendown()
+    draw_hex(length_hex, petal_color)
 
 
+def main():
+    draw_flower()
 
-draw_flower()
 
-# def main():
-#     get_length_hexagon()
-#     get_petal_color()
-#     get_center_color()
-#     draw_flower()
-#
-#
-# main()
+main()
 
 
 turtle.exitonclick()
